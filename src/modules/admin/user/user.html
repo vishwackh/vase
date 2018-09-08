@@ -9,12 +9,12 @@
 			<th>Company</th>
 		</thead>
 		<tbody>
-			<tr ng-repeat="user in $ctrl.users">
-				<td>{{user.name}}</td>
-				<td>{{user.username}}</td>
-				<td><a href="mailto:{{user.email}}">{{user.email}}</a></td>
-				<td>{{user.website}}</td>
-				<td>{{user.company.name}}</td>
+			<tr ng-repeat="u in user.users">
+				<td>{{u.name}}</td>
+				<td>{{u.username}}</td>
+				<td><a href="mailto:{{user.email}}">{{u.email}}</a></td>
+				<td>{{u.website}}</td>
+				<td>{{u.company.name}}</td>
 			</tr>
 		</tbody>
 	</table>
